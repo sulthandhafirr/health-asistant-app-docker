@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health Assistant App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    form {
+      margin-bottom: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    input, select {
+      margin-bottom: 10px;
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: teal;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 10px;
+      background: #fff;
+      padding: 15px;
+      border-left: 4px solid teal;
+    }
+  </style>
+</head>
+<body>
+  <h1>Health Assistant App</h1>
+
+  <h2>BMI Calculator</h2>
+  <form id="bmi-form">
+    <input type="number" placeholder="Height (cm)" id="bmi-height" required />
+    <input type="number" placeholder="Weight (kg)" id="bmi-weight" required />
+    <button type="submit">Calculate BMI</button>
+    <div id="bmi-result" class="result"></div>
+  </form>
+
+  <h2>Daily Calorie Recommendation</h2>
+  <form id="calorie-form">
+    <input type="number" placeholder="Age" id="calorie-age" required />
+    <input type="number" placeholder="Height (cm)" id="calorie-height" required />
+    <input type="number" placeholder="Weight (kg)" id="calorie-weight" required />
+    <select id="calorie-gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <select id="calorie-activity">
+      <option value="sedentary">Sedentary</option>
+      <option value="light">Light</option>
+      <option value="moderate">Moderate</option>
+      <option value="active">Active</option>
+      <option value="very active">Very Active</option>
+    </select>
+    <button type="submit">Get Recommendation</button>
+    <div id="calorie-result" class="result"></div>
+  </form>
+
+  <h2>Diet Suggestion</h2>
+  <form id="diet-form">
+    <select id="diet-goal">
+      <option value="maintain">Maintain</option>
+      <option value="lose">Lose Weight</option>
+      <option value="gain">Gain Weight</option>
+    </select>
+    <button type="submit">Get Suggestion</button>
+    <div id="diet-result" class="result"></div>
+  </form>
+
+  <h2>General Health Check</h2>
+  <form id="health-form">
+    <input type="number" placeholder="Age" id="health-age" required />
+    <input type="number" placeholder="Weight (kg)" id="health-weight" required />
+    <button type="submit">Check</button>
+    <div id="health-result" class="result"></div>
+  </form>
+
+  <h2>Daily Exercise Recommendation</h2>
+  <button id="exercise-btn">Get Exercises</button>
+  <div id="exercise-result" class="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
