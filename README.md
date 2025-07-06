@@ -104,7 +104,7 @@ services:
 
 ### Health Assistant App UI
 
-![Health Assistant App UI](screenshots/ui.png)
+![Health Assistant App UI](screenshot/ui.png)
 
 ---
 
