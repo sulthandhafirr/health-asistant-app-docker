@@ -1,23 +1,23 @@
 # Health Assistant App with Docker
 
-## 📌 Project Overview
+## Project Overview
 
 The **Health Assistant App** is a simple full-stack web application designed to help users monitor their health. It features:
 
-* 🧮 BMI (Body Mass Index) Calculator
-* 🔥 Daily Calorie Recommendation
-* 🥗 Diet Suggestion
-* 🧑‍⚕️ Health Check based on age and weight
-* 🏃 Exercise Recommendations
+* BMI (Body Mass Index) Calculator
+* Daily Calorie Recommendation
+* Diet Suggestion
+* Health Check based on age and weight
+* Exercise Recommendations
 
 The application is containerized using **Docker** for ease of deployment and reproducibility. It consists of:
 
-* **Frontend**: Static HTML, CSS, and JavaScript, served by Nginx
+* **Frontend**: Static HTML, CSS, and JavaScript
 * **Backend**: Python Flask API
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 ```
 health-assistant-app/
@@ -34,7 +34,7 @@ health-assistant-app/
 
 ---
 
-## 🛠️ Step-by-Step Deployment with Docker
+## Step-by-Step Deployment with Docker
 
 ### 1. Clone the Repository
 
@@ -49,25 +49,19 @@ cd health-assistant-app
 docker-compose up --build
 ```
 
-This command will:
-
-* Build the Flask backend
-* Build the Nginx frontend
-* Run both containers in the same Docker network
-
 ### 3. Open the App
 
 Open your browser and go to:
 
 ```
-http://localhost:8080
+http://localhost:3080
 ```
 
 You will see the Health Assistant App homepage.
 
 ---
 
-## 🔧 Docker Files
+## Docker Files
 
 ### Backend Dockerfile (`backend/Dockerfile`)
 
@@ -106,26 +100,16 @@ services:
 
 ---
 
-## 📷 Screenshots
+## Screenshots
 
-### 1. BMI Calculator UI
+### Health Assistant App UI
 
-![BMI Calculator](screenshots/bmi-calculator.png)
-
-### 2. Docker Compose Running
-
-![Docker Running](screenshots/docker-running.png)
+![Health Assistant App UI](screenshots/ui.png)
 
 ---
 
-## 🔗 GitHub Repository
+## GitHub Repository
 
 Link: [https://github.com/sulthandhafirr/health-assistant-app](https://github.com/sulthandhafirr/health-assistant-app)
 
 ---
-
-## ✅ Conclusion
-
-This project demonstrates a simple full-stack health assistant app using Docker containers. It's lightweight, modular, and easy to extend with more health-related features.
-
-You can now continue development, scale it with a database, or deploy it to cloud platforms like Heroku, Vercel, or Railway.
