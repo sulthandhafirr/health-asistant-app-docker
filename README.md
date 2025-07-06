@@ -111,9 +111,6 @@ services:
 ![Health Assistant App UI](screenshot/ui.png)
 
 ---
+Developed by: Sulthan Dhafir Rafief
 
-## GitHub Repository
-
-Link: https://github.com/sulthandhafirr/health-asistant-app-docker.git
-
----
+Link: https://github.com/sulthandhafirr/health-assistant-app.git
