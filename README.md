@@ -81,11 +81,13 @@ CMD ["python", "app.py"]
 FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/
 COPY script.js /usr/share/nginx/html/
+EXPOSE 80
 ```
 
 ### Docker Compose File (`docker-compose.yml`)
 
 ```yaml
+version: "3.9"
 services:
   backend:
     build: ./backend
@@ -95,7 +97,9 @@ services:
   frontend:
     build: ./frontend
     ports:
-      - "8080:80"
+      - "3000:80"
+    depends_on:
+      - backend
 ```
 
 ---
@@ -110,6 +114,6 @@ services:
 
 ## GitHub Repository
 
-Link: [https://github.com/sulthandhafirr/health-assistant-app](https://github.com/sulthandhafirr/health-assistant-app)
+Link: https://github.com/sulthandhafirr/health-asistant-app-docker.git
 
 ---
